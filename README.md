@@ -3,7 +3,7 @@ NGFramework
 
 #### A collection of utilitiy classes to help make working with a handful of Objective-C frameworks much easier.
 
-Current Frameworks with Convenience Classes:
+Current frameworks with convenience classes:
 
 * Social and Accounts (Twitter)
 * MessageUI (Email, SMS)
