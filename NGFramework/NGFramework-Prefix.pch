@@ -1,0 +1,38 @@
+//
+//  NGFramework-Prefix.pch
+//  NGFramework
+//
+//  Created by Kyle Turner on 9/24/14.
+//  Copyright (c) 2014 nGen Works. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "NGConstants.h"
+#endif
+
+// Block typdefs
+typedef void (^NoArgumentBlock)();
+typedef void (^SingleArgumentBlock)(id obj);
+typedef void (^DoubleArgumentBlock)(id obj1, id obj2);
+
+#define SuppressPerformSelectorLeakWarning(block) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+block; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
