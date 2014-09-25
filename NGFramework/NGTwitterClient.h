@@ -1,6 +1,6 @@
 //
 //  NGSocialClient.h
-//  Photo Dialer
+//  NGFramework
 //
 //  Created by Cody Kimberling on 7/7/14.
 //  Copyright (c) 2014 nGen Works. All rights reserved.

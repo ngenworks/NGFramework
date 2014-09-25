@@ -1,6 +1,6 @@
 //
 //  NGContactEntry
-//  Photo Dialer
+//  NGFramework
 //
 //  Created by Cody Kimberling on 7/1/14.
 //  Copyright (c) 2014 nGen Works. All rights reserved.

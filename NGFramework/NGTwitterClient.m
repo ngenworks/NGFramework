@@ -1,6 +1,6 @@
 //
 //  NGSocialClient.m
-//  Photo Dialer
+//  NGFramework
 //
 //  Created by Cody Kimberling on 7/7/14.
 //  Copyright (c) 2014 nGen Works. All rights reserved.
@@ -60,7 +60,7 @@ static NSString *kTwitterApiSecret = @"xIWyMOP5HzMAdFMtQzJFcjwXtUkPXoYiH6GK6k3tG
             }
             
         } else {
-            NSError *error = [NSError errorWithMessage:@"Beam does not have access to your Twitter accounts.  Adjust this in Settings and try again." andCode:-1];
+            NSError *error = [NSError errorWithMessage:@"NGFramework does not have access to your Twitter accounts.  Adjust this in Settings and try again." andCode:-1];
             [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationSocialMessageNotSent object:nil userInfo:@{kNotificationObjectKey : error}];
             self.requestInProgress = NO;
         }
